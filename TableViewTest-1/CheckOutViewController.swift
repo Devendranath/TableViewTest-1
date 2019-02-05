@@ -76,7 +76,7 @@ extension CheckOutViewController: UITableViewDataSource, UITableViewDelegate {
         let okayAction = UIAlertAction(title: "OK", style: .default) { (action) in
             
             let pVC = self.navigationController?.viewControllers[0] as! ViewController
-           pVC.selectedProducts = [:]
+           pVC.selectedProducts = []
             self.navigationController?.popViewController(animated: true)
         }
         alertController.addAction(okayAction)
